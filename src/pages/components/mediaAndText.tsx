@@ -58,7 +58,7 @@ const ImageSection = ({
                   muted
                   playsInline
                   className="w-full object-cover rounded-3xl"
-                  style={{ maxHeight: "400px" }}
+                  style={{ maxHeight: "600px" }}
                 />
               </>
             ) : (
