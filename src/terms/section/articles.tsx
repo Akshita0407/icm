@@ -68,12 +68,12 @@ const articlesData = [
         heading: "Your submissions",
         paragraphs: [
           <>
-            Please review this section and the "
+            Please review this section and the
             <span className="text-blue-500 underline">
-              PROHIBITED ACTIVITIES
+              " PROHIBITED ACTIVITIES "
             </span>
-            " section carefully prior to using our Services to understand the
-            (a) rights you give us and (b) obligations you have when you post or
+            section carefully prior to using our Services to understand the (a)
+            rights you give us and (b) obligations you have when you post or
             upload any content through the Services.
           </>,
           <>

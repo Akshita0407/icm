@@ -3,7 +3,7 @@ interface ArticleTable {
   rows: (string | React.ReactNode)[][];
 }
 
-interface ArticleSection {
+export interface ArticleSection {
   heading?: string;
   paragraphs?: (string | React.ReactNode)[];
   list?: (string | React.ReactNode)[];
