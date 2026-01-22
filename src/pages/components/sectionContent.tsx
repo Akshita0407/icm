@@ -15,11 +15,11 @@ const SectionContent = ({
 }: Content) => {
   return (
     <div className={`flex flex-col gap-4 ${className}`}>
-      <h1
+      <div
         className={`text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-[#222]  `}
       >
         {title}
-      </h1>
+      </div>
 
       {underline && <div className={`w-20 h-1 bg-[#ff6600] mb-4`}></div>}
 

@@ -15,11 +15,9 @@ const DigitalGrowthPlanning = () => {
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident id enim quae quia quibusdam nobis eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolores quia laborum, provident recusandae soluta ducimus facere ab accusamus reiciendis.",
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident id enim quae quia quibusdam nobis eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolores quia laborum, provident recusandae soluta ducimus facere ab accusamus reiciendis.",
         ]}
-        video={video}
-    
+        media={{ mediaType: "video", src: video }}
         underline={true}
-        imagePosition="right"
-
+        mediaPosition="right"
       />
     </>
   );

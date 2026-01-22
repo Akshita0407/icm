@@ -1,36 +1,45 @@
 import type { ReactNode } from "react";
+import clsx from "clsx";
 import SectionContent from "./sectionContent";
+
+type Media =
+  | { mediaType: "image"; src: string }
+  | { mediaType: "video"; src: string };
 
 interface ImageSectionProps {
   title: ReactNode;
   paragraphs: string[];
-  style?: string;
-  image?: string;
-  video?: string;
+  media: Media;
   underline?: boolean;
-  imagePosition?: "left" | "right";
-  imagebg?: boolean;
+  mediaPosition?: "left" | "right";
+  imageShadow?: boolean;
+  className?: string;
 }
 
 const ImageSection = ({
   title,
   paragraphs,
-  image,
-  video,
+  media,
   underline,
-  imagePosition,
-  imagebg,
-  style,
+  mediaPosition = "left",
+  imageShadow = false,
+  className,
 }: ImageSectionProps) => {
-  const isImageRight = imagePosition === "right";
+  const isMediaRight = mediaPosition === "right";
 
   return (
-    <div className={`w-full lg:py-20 py-12 px-5 md:px-10 lg:px-15 ${style}`}>
+    <div
+      className={clsx(
+        "w-full py-12 px-5 md:px-10 lg:px-15 lg:py-20",
+        className,
+      )}
+    >
       <div className="w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-10 items-center">
         <div
-          className={`max-w-xl  ${
-            isImageRight ? "order-last lg:order-first" : "order-last"
-          } `}
+          className={clsx(
+            "max-w-xl",
+            isMediaRight ? "order-last lg:order-first" : "order-last",
+          )}
         >
           <SectionContent
             title={title}
@@ -40,32 +49,32 @@ const ImageSection = ({
         </div>
 
         <div
-          className={`relative flex justify-center items-center ${
-            isImageRight ? "order-first lg:order-last" : "order-first"
-          }`}
+          className={clsx(
+            "relative flex justify-center items-center",
+            isMediaRight ? "order-first lg:order-last" : "order-first",
+          )}
         >
-          {imagebg && (
-            <div className="absolute -top-6 -right-6 w-full h-full bg-linear-to-br from-[#ff6600]/10 to-[#ff6600]/5 rounded-3xl hidden lg:block"></div>
+          {imageShadow && (
+            <div className="absolute -top-6 -right-6 w-full h-full bg-linear-to-br from-[#ff6600]/10 to-[#ff6600]/5 rounded-3xl hidden lg:block" />
           )}
 
           <div className="relative z-10 w-full overflow-hidden rounded-3xl shadow-2xl">
-            {video ? (
-              <>
-                <video
-                  src={video}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full object-cover rounded-3xl"
-                  style={{ maxHeight: "600px" }}
-                />
-              </>
+            {media.mediaType === "video" ? (
+              <video
+                src={media.src}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full object-cover rounded-3xl"
+                style={{ minHeight: 300, maxHeight: 600 }}
+              />
             ) : (
               <img
-                src={image}
-                alt={"image"}
+                src={media.src}
+                alt=""
                 className="w-full object-cover rounded-3xl"
+                style={{ minHeight: 300, maxHeight: 600 }}
               />
             )}
           </div>

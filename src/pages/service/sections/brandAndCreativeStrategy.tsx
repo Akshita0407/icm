@@ -1,4 +1,3 @@
-
 import type { ReactNode } from "react";
 import SectionContent from "../../components/sectionContent";
 import { FaTags, FaLightbulb, FaChartBar } from "react-icons/fa6";

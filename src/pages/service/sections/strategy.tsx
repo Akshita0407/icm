@@ -9,10 +9,10 @@ const Strategy = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident id enim quae quia quibusdam nobis eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "Quod dolores quia laborum, provident recusandae soluta ducimus facere ab accusamus reiciendis.",
       ]}
-      image={image}
+      media={{ mediaType: "image", src: image }}
       underline={true}
-      imagePosition="right"
-      imagebg={true}
+      mediaPosition="right"
+      imageShadow={true}
     />
   );
 };

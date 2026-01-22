@@ -1,7 +1,7 @@
 import Banner from "./sections/banner";
 import Strategy from "./sections/strategy";
 import SearchStrategy from "./sections/searchStrategy";
-import BrandAndCreativeStrategy from "./sections/BrandAndCreativeStrategy";
+import BrandAndCreativeStrategy from "./sections/brandAndCreativeStrategy";
 import ContentStrategy from "./sections/contentStrategy";
 import DigitalGrowthPlanning from "./sections/digitalGrowthPlanning";
 

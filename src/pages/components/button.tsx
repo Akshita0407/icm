@@ -1,14 +1,19 @@
+import clsx from "clsx";
+
 interface ButtonProps {
   buttonText: string;
-  style?: string;
+  className?: string;
   onClick?: () => void;
 }
 
-const Button = ({ buttonText, style = "", onClick }: ButtonProps) => {
+const Button = ({ buttonText, className, onClick }: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className={`w-50 h-10 border rounded-3xl border-transparent text-white bg-[#ff6600] flex justify-center items-center cursor-pointer font-bold text-[16px] uppercase  hover:scale-105 transition-transform duration-300 shadow-lg ${style}`}
+      className={clsx(
+        `px-5 py-2 border-2 border-[#ff6600] text-[#ff6600] rounded-lg font-semibold hover:bg-[#ff6600] hover:text-white transition-all duration-300 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#ff6600] focus:ring-offset-2 `,
+        className,
+      )}
     >
       {buttonText}
     </button>

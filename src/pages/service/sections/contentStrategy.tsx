@@ -12,13 +12,13 @@ const ContentStrategy = () => {
         }
         paragraphs={[
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident id enim quae quia quibusdam nobis eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit Quod dolores quia laborum, provident recusandae soluta ducimus facere ab accusamus reiciendis.",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident id enim quae quia quibusdam nobis eligendi. ",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident id enim quae quia quibusdam nobis eligendi.",
         ]}
-        video={video}
-    
+        media={{ mediaType: "video", src: video }}
         underline={true}
-        imagePosition="left"
-        imagebg={true}
+        mediaPosition="left"
+        imageShadow={true}
+        className="my-10"
       />
     </div>
   );
