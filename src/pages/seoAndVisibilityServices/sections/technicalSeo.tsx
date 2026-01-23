@@ -20,7 +20,7 @@ const TechnicalSeo = () => {
   return (
     <div className="w-full py-12 px-5 md:px-10 lg:px-16 xl:px-15 lg:py-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-        <div className="w-full flex flex-col gap-4 ">
+        <div className="w-full flex flex-col gap-4 lg:order-first order-last">
           <div className="flex flex-col gap-2">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-2">
               Technical SEO
@@ -40,7 +40,7 @@ const TechnicalSeo = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-2">
             {data.map((item) => (
-              <article
+              <div
                 key={item.id}
                 className="group p-4 bg-white flex items-center gap-3 rounded-xl border border-gray-200 hover:border-[#ff6600] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer"
               >
@@ -50,7 +50,7 @@ const TechnicalSeo = () => {
                 <h4 className=" text-sm md:text-lg font-semibold text-gray-600">
                   {item.label}
                 </h4>
-              </article>
+              </div>
             ))}
           </div>
 
@@ -58,7 +58,7 @@ const TechnicalSeo = () => {
             <Button buttonText="LEARN MORE" />
           </div>
         </div>
-        <div className="w-full ">
+        <div className="w-full order-first lg:order-last">
           <div className="relative w-full aspect-video lg:min-h-100 rounded-2xl overflow-hidden shadow-xl">
             <video
               src={video}

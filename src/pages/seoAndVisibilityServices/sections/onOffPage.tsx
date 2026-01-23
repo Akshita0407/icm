@@ -40,12 +40,12 @@ const OnOffPage = () => {
     <>
       <div
         className={clsx(
-          "w-full pb-12 px-5 md:px-10 lg:px-16 xl:px-20 lg:pb-20 ",
+          "w-full pb-12 px-5 md:px-10 lg:px-16 xl:px-20 lg:pb-20",
         )}
       >
         <div className="w-full flex flex-col lg:gap-8 gap-5 justify-center items-center ">
-          <div className="flex flex-col gap-4 mb-8 lg:mb-8 justify-center items-center text-center ">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          <div className="flex flex-col gap-4 mb-5 lg:mb-8 lg:justify-center lg:items-center lg:text-center  ">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 lg:mb-4 mb-2">
               On-page & Off-page SEO
             </h2>
             <p className="w-full lg:w-[90%] text-gray-600 leading-relaxed text-sm md:text-base lg:text-lg">
@@ -59,7 +59,7 @@ const OnOffPage = () => {
             {data.map((c) => (
               <div
                 key={c.id}
-                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 min-h-74"
+                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 min-h-74 cursor-pointer"
               >
                 <div className="absolute inset-0  transition-transform duration-500 group-hover:scale-110">
                   <img
@@ -69,7 +69,7 @@ const OnOffPage = () => {
                   />
                 </div>
 
-                <div className="absolute inset-0 bg-linear-to-b from-black/30 via-black/40 to-black/50   duration-300"></div>
+                <div className="absolute inset-0 bg-linear-to-b from-black/30 via-black/40 to-black/50  duration-300"></div>
 
                 <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
 
