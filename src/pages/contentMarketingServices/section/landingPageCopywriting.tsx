@@ -30,7 +30,7 @@ const data: ListProp[] = [
 const LandingPageCopywriting = () => {
   return (
     <>
-      <div className="w-full pb-12 px-5 md:px-10 lg:px-16 xl:px-15 lg:pb-20">
+      <div className="w-full py-12 px-5 md:px-10 lg:px-16 xl:px-15 lg:py-20">
         <div className="flex flex-col gap-4 mb-6 lg:mb-10">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
             Landing Page Copywriting
@@ -42,12 +42,12 @@ const LandingPageCopywriting = () => {
             elit. Fuga, et. Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Quibusdam neque temporibus atque nulla impedit cum!
           </p>
-          <ul className="flex flex-col gap-3">
+          <ul className="flex flex-col gap-3 cursor-pointer">
             {data.map((item) => (
-              <li key={item.id} className="flex items-start gap-3">
+              <li key={item.id} className="flex items-start gap-3 group">
                 <div className="w-[5%] flex justify-center itesms-center">
-                  <div className="w-6 h-6 aspect-square hover:bg-[#ff6600] bg-[#ff6600]/10 flex justify-center items-center">
-                    <IoArrowForward className="hover:text-white font-bold text-xl text-[#ff6600]" />
+                  <div className="w-6 h-6 aspect-square group-hover:bg-[#ff6600] bg-[#ff6600]/10 flex justify-center items-center">
+                    <IoArrowForward className="group-hover:text-white font-bold text-xl text-[#ff6600]" />
                   </div>
                 </div>
                 <div className="w-[90%]">

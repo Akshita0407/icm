@@ -2,7 +2,7 @@ import image from "../../../assets/email.jpg";
 const EmailMarketingContent = () => {
   return (
     <>
-      <div className="w-full pb-12 px-5 md:px-10 lg:px-16 xl:px-15 lg:pb-20">
+      <div className="w-full py-12 px-5 md:px-10 lg:px-16 xl:px-15 lg:py-20">
         <div className="w-full flex center relative overflow-hidden">
           <div className="w-full grid grid-cols-1 lg:grid-cols-2 md:gap-10 gap-5 relative z-10">
             <div className="w-full ">

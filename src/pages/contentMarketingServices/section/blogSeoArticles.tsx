@@ -1,5 +1,5 @@
 import clsx, { type ClassValue } from "clsx";
-import image from "../../../assets/strategy.jpg"
+import image from "../../../assets/strategy.jpg";
 
 interface ContentCardProps {
   id: number;

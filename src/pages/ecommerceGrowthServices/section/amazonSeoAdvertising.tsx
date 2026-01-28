@@ -112,7 +112,7 @@ const AmazonSeoAdvertising = () => {
               c.className,
             )}
           >
-            <div className="w-full lg:w-1/2 order-1">
+            <div className="w-full lg:w-1/2 ">
               <div className="w-full rounded-xl min-h-80 shadow-md overflow-hidden">
                 <img
                   src={c.image}
@@ -122,7 +122,7 @@ const AmazonSeoAdvertising = () => {
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2 order-2 flex flex-col gap-5 text-left bg-white p-5 shadow-md rounded-3xl">
+            <div className="w-full lg:w-1/2  flex flex-col gap-5 text-left bg-white p-5 shadow-md rounded-3xl">
               <h3 className="text-2xl md:text-3xl font-semibold text-gray-800">
                 {c.subheading}
               </h3>
@@ -137,10 +137,11 @@ const AmazonSeoAdvertising = () => {
                     <div className="w-[10%] flex justify-center itesms-center">
                       <FaCheckCircle className="text-orange-500 text-xl mt-1" />
                     </div>
-                     <div className="w-[90%]">
-                    <span className="text-gray-600 text-sm md:text-base">
-                      {item.label}
-                    </span></div>
+                    <div className="w-[90%]">
+                      <span className="text-gray-600 text-sm md:text-base">
+                        {item.label}
+                      </span>
+                    </div>
                   </li>
                 ))}
               </ul>

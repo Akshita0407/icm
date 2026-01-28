@@ -5,6 +5,7 @@ import Service from "./pages/service";
 import SeoVisibilityServices from "./pages/seoAndVisibilityServices";
 import EcommerceGrowthServices from "./pages/ecommerceGrowthServices";
 import ContentMarketingServices from "./pages/contentMarketingServices";
+import OnlineReputationManagement from "./pages/onlineReputationManagement";
 import "./App.css";
 
 function App() {
@@ -23,6 +24,10 @@ function App() {
           <Route
             path="/content-marketing"
             element={<ContentMarketingServices />}
+          />
+          <Route
+            path="/online-reputation"
+            element={<OnlineReputationManagement />}
           />
         </Routes>
       </BrowserRouter>
